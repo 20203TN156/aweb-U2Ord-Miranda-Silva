@@ -3,7 +3,7 @@ function saveNote(){
     var nota = document.getElementById("nota").value;
     
     
-    var body = document.getElementsByTagName("body")[0];
+   
     var col = document.getElementById("tvNote");
     
     var f = new Date();
