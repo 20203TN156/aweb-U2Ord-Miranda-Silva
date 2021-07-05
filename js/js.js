@@ -1,9 +1,7 @@
 function saveNote(){
 
     var nota = document.getElementById("nota").value;
-    
-    
-   
+
     var col = document.getElementById("tvNote");
     
     var f = new Date();
