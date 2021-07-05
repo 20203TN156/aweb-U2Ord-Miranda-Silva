@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>Hello, world!</title>
+    <title>Mis notas pro</title>
   </head>
   <body>
     <div class="container">
@@ -37,43 +37,8 @@
 
     </div>
 
-        <script>
-            function saveNote(){
-
-var nota = document.getElementById("nota").value; 
-
-var body = document.getElementsByTagName("body")[0];
-var col = document.getElementById("tvNote");
-
-var f = new Date();
-var divCard = document.createElement("div")
-var divCarBody = document.createElement("div")
-var blockquote = document.createElement("blockquote");
-var p = document.createElement("p");
-var footer = document.createElement("footer");
-var br = document.createElement("br");
-var texto = document.createTextNode(nota);
-var txtFecha = document.createTextNode(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear() + ", " + f.getHours() + ":" + f.getMinutes() + " h");
-divCard.setAttribute("style", "margin-top: 1em;");
-
-
-col.appendChild(divCard);
-divCard.setAttribute("class", "card bg-light");
-
-divCard.appendChild(divCarBody);
-divCarBody.setAttribute("class", "card-body");
-
-divCarBody.appendChild(blockquote);
-blockquote.setAttribute("class", "blockquote");
-
-blockquote.appendChild(p);
-p.appendChild(texto);
-
-blockquote.appendChild(footer);
-footer.setAttribute("class", "blockquote text-right");
-footer.appendChild(txtFecha);
-
-}
+        <script src="js/js.js">
+            
         </script>
     <!-- Optional JavaScript; choose one of the two! -->
 
