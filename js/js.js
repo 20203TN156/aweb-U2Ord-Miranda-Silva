@@ -1,6 +1,7 @@
 function saveNote(){
 
-    var nota = document.getElementById("nota").value; 
+    var nota = document.getElementById("nota").value;
+    
     
     var body = document.getElementsByTagName("body")[0];
     var col = document.getElementById("tvNote");
@@ -33,4 +34,7 @@ function saveNote(){
     footer.setAttribute("class", "blockquote text-right");
     footer.appendChild(txtFecha);
     
+    document.getElementsByClassName("form-control txtNota")[0].value = "";
+
+
     }
